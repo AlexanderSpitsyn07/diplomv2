@@ -26,11 +26,11 @@
     (во время доработки использовал его, вариант с dynamic kubespray пробовал, но не получилось дать приложению и grafana доступ извне).
     - а. С помощью terraform resource для kubernetes создать региональный мастер kubernetes с размещением нод в разных 3 подсетях
     - б. С помощью terraform resource для kubernetes node group
-Ожидаемый результат:
-Работоспособный Kubernetes кластер:
-Виртуальные машины:
+ - Ожидаемый результат:
+ - Работоспособный Kubernetes кластер:
+  - Виртуальные машины:
     ![Screenshot](2-1.png)
-Создание ingress контроллера - 
+  - Создание ingress контроллера - 
     ![Screenshot](2-2.png)
     ![Screenshot](2-3.png)
     ![Screenshot](2-4.png)
