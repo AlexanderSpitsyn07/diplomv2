@@ -20,24 +20,24 @@
 ---
 ### Создание Kubernetes кластера
 
-   На этом этапе необходимо создать [Kubernetes](https://kubernetes.io/ru/docs/concepts/overview/what-is-kubernetes/) кластер на базе предварительно созданной инфраструктуры.   Требуется обеспечить доступ к ресурсам из Интернета.
-   Это можно сделать двумя способами:
-   Альтернативный вариант: воспользуйтесь сервисом Yandex Managed Service for Kubernetes 
+На этом этапе необходимо создать [Kubernetes](https://kubernetes.io/ru/docs/concepts/overview/what-is-kubernetes/) кластер на базе предварительно созданной инфраструктуры.   Требуется обеспечить доступ к ресурсам из Интернета.
+Это можно сделать двумя способами:
+ - Альтернативный вариант: воспользуйтесь сервисом Yandex Managed Service for Kubernetes 
     (во время доработки использовал его, вариант с dynamic kubespray пробовал, но не получилось дать приложению и grafana доступ извне).
-    а. С помощью terraform resource для kubernetes создать региональный мастер kubernetes с размещением нод в разных 3 подсетях
-    б. С помощью terraform resource для kubernetes node group
+    - а. С помощью terraform resource для kubernetes создать региональный мастер kubernetes с размещением нод в разных 3 подсетях
+    - б. С помощью terraform resource для kubernetes node group
 Ожидаемый результат:
 Работоспособный Kubernetes кластер:
- Виртуальные машины:
+Виртуальные машины:
     ![Screenshot](2-1.png)
- Создание ingress контроллера - 
+Создание ingress контроллера - 
     ![Screenshot](2-2.png)
     ![Screenshot](2-3.png)
     ![Screenshot](2-4.png)
     ![Screenshot](2-5.png)
- В файле ~/.kube/config находятся данные для доступа к кластеру.
+В файле ~/.kube/config находятся данные для доступа к кластеру.
     ![Screenshot](2-6.png)
- Команда kubectl get pods --all-namespaces отрабатывает без ошибок.
+Команда kubectl get pods --all-namespaces отрабатывает без ошибок.
     ![Screenshot](2-7.png)
 
 ---
