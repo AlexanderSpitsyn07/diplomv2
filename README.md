@@ -20,9 +20,9 @@
 ---
 ### Создание Kubernetes кластера
 
-На этом этапе необходимо создать [Kubernetes](https://kubernetes.io/ru/docs/concepts/overview/what-is-kubernetes/) кластер на базе предварительно созданной инфраструктуры.   Требуется обеспечить доступ к ресурсам из Интернета.
-Это можно сделать двумя способами:
-    Альтернативный вариант: воспользуйтесь сервисом Yandex Managed Service for Kubernetes 
+   На этом этапе необходимо создать [Kubernetes](https://kubernetes.io/ru/docs/concepts/overview/what-is-kubernetes/) кластер на базе предварительно созданной инфраструктуры.   Требуется обеспечить доступ к ресурсам из Интернета.
+   Это можно сделать двумя способами:
+   Альтернативный вариант: воспользуйтесь сервисом Yandex Managed Service for Kubernetes 
     (во время доработки использовал его, вариант с dynamic kubespray пробовал, но не получилось дать приложению и grafana доступ извне).
     а. С помощью terraform resource для kubernetes создать региональный мастер kubernetes с размещением нод в разных 3 подсетях
     б. С помощью terraform resource для kubernetes node group
