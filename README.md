@@ -50,14 +50,14 @@
 1. Рекомендуемый вариант:
    а. Создайте отдельный git репозиторий с простым nginx конфигом, который будет отдавать статические данные.
 https://github.com/AlexanderSpitsyn07/test-for-dockerfile
-   б. Подготовьте Dockerfile для создания образа приложения. 
-![Screenshot](3.png)
+   б. Подготовьте Dockerfile для создания образа приложения.
 
 Ожидаемый результат:
 1. Git репозиторий с тестовым приложением и Dockerfile.
 https://github.com/AlexanderSpitsyn07/test-for-dockerfile
 2. Регистр с собранным docker image. В качестве регистра может быть DockerHub.
-![Screenshot](3-1.png)
+ https://hub.docker.com/repository/docker/chehvostik/tarimage
+
 ---
 ### Подготовка cистемы мониторинга и деплой приложения
 
@@ -68,34 +68,29 @@ https://github.com/AlexanderSpitsyn07/test-for-dockerfile
 1. Задеплоить в кластер [prometheus](https://prometheus.io/), [grafana](https://grafana.com/), [alertmanager](https://github.com/prometheus/alertmanager), [экспортер](https://github.com/prometheus/node_exporter) основных метрик Kubernetes.
 Альтернативный вариант:
 Для организации конфигурации можно использовать [helm charts](https://helm.sh/)
-
-![Screenshot](4-1.png)
-![Screenshot](4-6.png)
-![Screenshot](4-8.png)
-![Screenshot](4-9.png)
-![Screenshot](4-10.png)
-![Screenshot](4-11.png)
-![Screenshot](4-12.png)
-![Screenshot](4-13.png)
-
+-Установка стека prometheus-grafana:
+![Screenshot](3-1.png)
+![Screenshot](3-2.png)
+-Веб интерфейс:
+![Screenshot](3-3.png)
 
 2. Задеплоить тестовое приложение, например, [nginx](https://www.nginx.com/) сервер отдающий статическую страницу.
-![Screenshot](4-2.png)
-![Screenshot](4-3.png)
-![Screenshot](4-4.png)
-![Screenshot](4-5.png)
+![Screenshot](3-4.png)
+![Screenshot](3-5.png)
+![Screenshot](3-6.png)
+
 
 Ожидаемый результат:
 1. Git репозиторий с конфигурационными файлами для настройки Kubernetes.
 https://github.com/AlexanderSpitsyn07/repoan
 2. Http доступ к web интерфейсу grafana.
-http://130.193.51.22:32433
+http://51.250.67.172
 UserName: admin
 Password: prom-operator
 3. Дашборды в grafana отображающие состояние Kubernetes кластера.
 В качестве основного Dashboard экспортировал https://grafana.com/grafana/dashboards/315, скриншоты выше.
 4. Http доступ к тестовому приложению.
-http://130.193.51.22:32764/
+http://51.250.18.30:8080/ и helmchart для него - https://github.com/AlexanderSpitsyn07/diplomchart
 
 
 ---
