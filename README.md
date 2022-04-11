@@ -121,7 +121,7 @@ admin/AdminAdmin1
 1. Репозиторий с конфигурационными файлами Terraform и готовность продемонстрировать создание всех ресурсов с нуля.
 https://github.com/AlexanderSpitsyn07/terr-for-dip
 2. Пример pull request с комментариями созданными atlantis'ом или снимки экрана из Terraform Cloud.
-3. Репозиторий с конфигурацией ansible, если был выбран способ создания Kubernetes кластера при помощи ansible.
+3. Репозиторий с конфигурацией ansible, если был выбран способ создания Kubernetes кластера при помощи ansible (в рамках доработки не использовал).
 4. Репозиторий с Dockerfile тестового приложения и ссылка на собранный docker image.
 https://github.com/AlexanderSpitsyn07/test-for-dockerfile
 https://hub.docker.com/repository/docker/chehvostik/tarimage
