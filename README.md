@@ -126,7 +126,9 @@ https://github.com/AlexanderSpitsyn07/terr-for-dip
 https://github.com/AlexanderSpitsyn07/test-for-dockerfile
 https://hub.docker.com/repository/docker/chehvostik/tarimage
 5. Репозиторий с конфигурацией Kubernetes кластера.
-https://github.com/AlexanderSpitsyn07/repoan
+В файле ~/.kube/config находятся данные для доступа к кластеру. 
+![Screenshot](2-6.png)
+
 6. Ссылка на тестовое приложение - http://51.250.18.30:8080/ - и веб интерфейс Grafana с данными доступа.
 http://51.250.67.172
 UserName: admin
