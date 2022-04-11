@@ -130,7 +130,7 @@ https://github.com/AlexanderSpitsyn07/terr-for-dip
 4. Репозиторий с Dockerfile тестового приложения и ссылка на собранный docker image.
 https://github.com/AlexanderSpitsyn07/test-for-dockerfile
 https://hub.docker.com/repository/docker/chehvostik/tarimage
-5. Репозиторий с конфигурацией Kubernetes кластера.
+5. Репозиторий с конфигурацией Kubernetes кластера (не стал создавать отдельный репо ради одного файла config).
 В файле ~/.kube/config находятся данные для доступа к кластеру. 
 ![Screenshot](2-6.png)
 
